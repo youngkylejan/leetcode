@@ -1,3 +1,3 @@
 # Leetcode Notes
 
-> afford corresponding explanation and accepted code of questions on leetcode
+> Afford Corresponding Explanation and Accepted code of Questions on Leetcode
