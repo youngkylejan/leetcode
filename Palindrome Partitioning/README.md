@@ -1,0 +1,4 @@
+# Palindrome Partitioning
+
+**Backtracking**
+

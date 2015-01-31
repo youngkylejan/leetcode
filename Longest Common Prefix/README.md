@@ -1,0 +1,4 @@
+# Longest Common Prefix
+
+**String**
+

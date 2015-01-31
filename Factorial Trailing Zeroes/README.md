@@ -1,0 +1,4 @@
+# Factorial Trailing Zeroes
+
+**Math**
+
