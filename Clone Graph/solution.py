@@ -24,7 +24,7 @@ class Solution:
             for item in frontOld.neighbors:
                 if item.label not in nodesMap:
                     nodesMap[item.label] = UndirectedGraphNode(item.label)
-                                frontNew.neighbors.append(nodesMap[item.label])
+                    frontNew.neighbors.append(nodesMap[item.label])
                 if item.label not in visited:
                     queue.append(item)
                     newQueue.append(nodesMap[item.label])
