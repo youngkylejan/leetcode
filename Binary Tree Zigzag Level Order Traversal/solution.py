@@ -11,7 +11,7 @@ class Solution:
     # @return a list of lists of integers
     def zigzagLevelOrder(self, root):
         self.DFS(root, 0)
-                for i in range(0, len(self.ans)):
+        for i in range(0, len(self.ans)):
             if i % 2 != 0:
                 self.ans[i].reverse()
         return self.ans
