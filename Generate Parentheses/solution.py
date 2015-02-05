@@ -7,7 +7,7 @@ class Solution:
         self.backtrace(n, results, ans, 0, 0)
         return results
     def backtrace(self, n, results, ans, leftNum, rightNum):
-                if leftNum < rightNum:
+        if leftNum < rightNum:
             return
         if leftNum == n and rightNum == n:
             results.append("".join(ans))

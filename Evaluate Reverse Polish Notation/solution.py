@@ -4,7 +4,7 @@ class Solution:
     def evalRPN(self, tokens):
         stack = []
         for i in range(0, len(tokens)):
-                        operator = tokens[i]
+            operator = tokens[i]
             if operator.isdigit() or (operator[0] == "-" and operator[1:len(operator)].isdigit()):
                 stack.append(int(operator))
             else:

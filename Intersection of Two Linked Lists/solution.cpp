@@ -6,26 +6,26 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
-public:
+ class Solution {
+ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode *pa = headA, *pb = headB;
-                while (pa && pb) {
+        while (pa && pb) {
             pa = pa->next;
             pb = pb->next;
         }
-                while (pa) {
+        while (pa) {
             headA = headA->next;
             pa = pa->next;
         }
-                while (pb) {
+        while (pb) {
             headB = headB->next;
             pb = pb->next;
         }
-                while (headA && headA != headB) {
+        while (headA && headA != headB) {
             headA = headA->next;
             headB = headB->next;
         }
-                return headA;
+        return headA;
     }
 };

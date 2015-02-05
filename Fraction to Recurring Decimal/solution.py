@@ -1,7 +1,7 @@
 class Solution:
     # @return a string
     def fractionToDecimal(self, numerator, denominator):
-                if numerator % denominator == 0:
+        if numerator % denominator == 0:
             return str(numerator / denominator)
         sign = 1 if (numerator > 0) ^ (denominator > 0) is False else -1
         numerator = abs(numerator)

@@ -4,9 +4,9 @@ class Solution:
         l1 = len(s1)
         l2 = len(s2)
         l3 = len(s3)
-                if l1 + l2 != l3:
+        if l1 + l2 != l3:
             return False
-                    dp = [[False] * (l3 + 1) for row in range(l3 + 1)]
+        dp = [[False] * (l3 + 1) for row in range(l3 + 1)]
         dp[0][0] = True
         for i in range(1, l1 + 1):
             dp[i][0] = dp[i - 1][0] and s1[i - 1] == s3[i - 1]
