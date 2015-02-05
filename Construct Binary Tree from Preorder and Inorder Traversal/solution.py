@@ -21,7 +21,6 @@ class Solution:
         for i in range(inStart, inEnd + 1):
             if inorder[i] == root.val:
                 break
-        root.left = self.process(preorder, inorder, preStart + 1, preStart + i - inStart, inStart, i - 1
-)
+        root.left = self.process(preorder, inorder, preStart + 1, preStart + i - inStart, inStart, i - 1)
         root.right = self.process(preorder, inorder, preEnd - inEnd + i + 1, preEnd, i + 1, inEnd)
         return root
