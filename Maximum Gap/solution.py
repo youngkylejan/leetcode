@@ -16,7 +16,7 @@ class Solution:
             if item == minNum or item == maxNum:
                 continue
             index = (item - minNum) / interval
-                        backetMin[index] = min(item, backetMin[index])
+            backetMin[index] = min(item, backetMin[index])
             backetMax[index] = max(item, backetMax[index])
         gap = 0
         previous = minNum

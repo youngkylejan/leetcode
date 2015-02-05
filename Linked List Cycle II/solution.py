@@ -18,7 +18,7 @@ class Solution:
                 break
         if q is None or q.next is None:
             return None
-                    while head != p:
+        while head != p:
             p = p.next
             head = head.next
         return head

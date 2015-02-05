@@ -17,7 +17,7 @@ class Solution:
     def compare(self, str2, str1):
         l1 = len(str1)
         l2 = len(str2)
-                if str1 != str2[0:len(str1)]:
+        if str1 != str2[0:len(str1)]:
             return 1
         if int(str2) - int(str1 + str2[0 : l2 - l1]) != 0:
             return int(str2) - int(str1 + str2[0 : l2 - l1])

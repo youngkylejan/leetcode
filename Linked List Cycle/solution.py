@@ -13,7 +13,7 @@ class Solution:
         q = head
         while p is not None:
             p = p.next
-                        if q.next is not None:
+            if q.next is not None:
                 q = q.next.next
             else:
                 return False
