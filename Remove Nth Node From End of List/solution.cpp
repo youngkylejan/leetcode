@@ -6,18 +6,18 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
-public:
+ class Solution {
+ public:
     ListNode *removeNthFromEnd(ListNode *head, int n) {
         ListNode **p = &head, *q = head;
-                for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             q = q->next;
         }
-                while (q->next) {
+        while (q->next) {
             p = &((*p)->next);
             q = q->next;
         }
-                *p = (*p)->next;
-                return head;
+        *p = (*p)->next;
+        return head;
     }
 };

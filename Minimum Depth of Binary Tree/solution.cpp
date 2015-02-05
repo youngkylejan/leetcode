@@ -7,13 +7,13 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-class Solution {
-public:
+ class Solution {
+ public:
     int cal(TreeNode *root, int depth) {
         if (!root) {
             return depth;
         }
-                if (root->left && root->right) {
+        if (root->left && root->right) {
             return min(cal(root->left, depth + 1), cal(root->right, depth + 1));
         } else if (root->left) {
             return cal(root->left, depth + 1);
@@ -23,10 +23,10 @@ public:
             return depth;
         }
     }
-        int minDepth(TreeNode *root) {
+    int minDepth(TreeNode *root) {
         if (!root) {
             return 0;
         }
-                return cal(root, 1);    
+        return cal(root, 1);    
     }
 };

@@ -15,10 +15,10 @@ public:
                 }
                 a--;
             }
-                        if (!isSafe) {
+            if (!isSafe) {
                 continue;
             }
-                        a = row;
+            a = row;
             while (a >= 0 && p >= 0) {
                 if (a != row && p != j && v[a][p] == 'Q') {
                     isSafe = false;
@@ -27,10 +27,10 @@ public:
                 a--;
                 p--;
             }
-                        if (!isSafe) {
+            if (!isSafe) {
                 continue;
             }
-                        a = row;
+            a = row;
             while (a >= 0 && q < n) {
                 if (a != row && q != j && v[a][q] == 'Q') {
                     isSafe = false;
@@ -39,23 +39,23 @@ public:
                 a--;
                 q++;
             }
-                        if (!isSafe) {
+            if (!isSafe) {
                 continue;
             }
-                        v[row][j] = 'Q';
+            v[row][j] = 'Q';
             backtrace(result, v, row + 1, n);
             v[row][j] = '.';
         }
     }
     int totalNQueens(int n) {
-                vector<string> v;
-                string line = "";
+        vector<string> v;
+        string line = "";
         for (int i = 0; i < n; i++)
             line = line + ".";
         for (int i = 0; i < n; i++)
             v.push_back(line);
         vector<vector<string>> result;
-                backtrace(result, v, 0, n);
+        backtrace(result, v, 0, n);
         return result.size();
     }
 };

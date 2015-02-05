@@ -6,9 +6,9 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
-public:
-ListNode* Merge(ListNode *first, ListNode *second) {
+ class Solution {
+ public:
+    ListNode* Merge(ListNode *first, ListNode *second) {
         ListNode *head = new ListNode(-1);
         ListNode *cur = head;
         while (first != NULL || second != NULL) {

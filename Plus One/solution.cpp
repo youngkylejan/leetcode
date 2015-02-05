@@ -3,7 +3,7 @@ public:
     vector<int> plusOne(vector<int> &digits) {
         int plus = 1;
         int len = digits.size();
-                for (int i = len - 1; i >= 0; i--) {
+        for (int i = len - 1; i >= 0; i--) {
             if (digits[i] + 1 > 9) {
                 digits[i] = 0;
                 plus = 1;
@@ -13,9 +13,9 @@ public:
                 break;
             }
         }
-                if (plus == 1) {
+        if (plus == 1) {
             digits.insert(digits.begin(), 1, 1);
         }
-                return digits;
+        return digits;
     }
 };

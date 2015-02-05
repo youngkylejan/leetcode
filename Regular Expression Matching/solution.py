@@ -14,6 +14,5 @@ class Solution:
                 if p[j] != '*':
                     dp[i + 1][j + 1] = dp[i][j] and (s[i] == p[j] or p[j] == '.')
                 else:
-                    dp[i + 1][j + 1] = dp[i + 1][j - 1] and j > 0 or dp[i + 1][j] or dp[i][j + 1] and j 
-> 0 and (s[i] == p[j - 1] or p[j - 1] == '.')
+                    dp[i + 1][j + 1] = dp[i + 1][j - 1] and j > 0 or dp[i + 1][j] or dp[i][j + 1] and j > 0 and (s[i] == p[j - 1] or p[j - 1] == '.')
         return dp[m][n]

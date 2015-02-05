@@ -6,13 +6,13 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-class Solution {
-public:
+ class Solution {
+ public:
     ListNode *deleteDuplicates(ListNode *head) {
-                if (!head) {
+        if (!head) {
             return head;
         }
-                ListNode *p = head;
+        ListNode *p = head;
         while (p) {
             if (p->next && p->val == p->next->val) {
                 p->next = p->next->next;
@@ -20,6 +20,6 @@ public:
                 p = p->next;
             }
         }
-                return head;
+        return head;
     }
 };
