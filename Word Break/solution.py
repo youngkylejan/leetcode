@@ -12,4 +12,5 @@ class Solution:
             for j in range(i, len(s)):
                 if s[i:j+1] in dict and dp[j + 1] == True:
                     dp[i] = True
+                    break
         return dp[0]
