@@ -1,6 +1,7 @@
 class Solution {
 public:
     string nextStr(string str) {
+
         string ans = "";
         int len = str.length();
         char temp = str[0];
@@ -17,6 +18,7 @@ public:
         ans += to_string(count) + temp;
         return ans;
     }
+    
     string countAndSay(int n) {
         string ans = "1";
         while (--n) {
