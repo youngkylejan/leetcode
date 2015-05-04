@@ -24,15 +24,15 @@ public:
         int i = 0;
         while(num > 0)
         {
-          if(num/dct[i].key == 0)
-          {
-            i += 1;
-            continue;
+            if(num/dct[i].key == 0)
+            {
+                i += 1;
+                continue;
+            }
+            for(int j = 0; j < num/dct[i].key; ++j)
+                res.append(dct[i].szRoman);
+            num%=dct[i].key;
         }
-        for(int j = 0; j < num/dct[i].key; ++j)
-            res.append(dct[i].szRoman);
-        num%=dct[i].key;
+        return res;
     }
-    return res;
-}
 };
